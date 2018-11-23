@@ -4,11 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GreetingTest {
+public class PersonTest {
 
     @Test
     public void testConstruction() {
-        Greeting g = new Greeting(10l, "Hello");
-        assertEquals(g.getId(), 10l);
+        Person p = new Person("Hello", 12, "emailId");
+        assertEquals(p.getName(), "Hello");
     }
+
 }

@@ -1,0 +1,22 @@
+# Use emacs rest client mode to make these requests
+
+# Get all person objects
+
+GET http://localhost:8080/persons
+
+# Create a person
+
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{"name":"person A", "age":23, "emailId": "person.a@tutorial.com"}
+
+# Lookup the person ID
+
+GET http://localhost:8080/persons/1
+
+# delete a person
+
+DELETE http://localhost:8080/persons/1
+Content-Type: application/json
+
